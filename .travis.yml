@@ -3,5 +3,5 @@ env:
         global:
         - KITTENS=true
 script:
-        printenv | more
+        printenv TRAVIS
 
