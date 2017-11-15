@@ -1,5 +1,7 @@
+language: ruby
 env:
-	global:
-	- KITTENS=true
+        global:
+        - KITTENS=true
 script:
-	printenv | more
+        printenv | more
+
