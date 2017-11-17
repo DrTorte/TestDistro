@@ -4,16 +4,16 @@ dist: trusty
 language: node_js
 
 before_script:
-  - sudo cat /etc/init.d/neo4j
+  - service neo4j stop
   - sudo rm /etc/init.d/neo4j
   - wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
   - echo 'deb https://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
   - sudo apt-get update
   - sudo apt-get install neo4j-enterprise=3.2.3
-  - sudo cat /etc/init.d/neo4j
   - sleep 10
 
 install: true
 script:
   - service neo4j status
+  - service neo4j start
   - curl http://localhost:7474/db/data
