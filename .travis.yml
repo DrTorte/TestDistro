@@ -5,11 +5,9 @@ language: node_js
 
 before_script:
   - wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
-  - echo 'deb https://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
+  - echo 'deb https://debian.neo4j.org/repo stable/'
   - sudo apt-get update
-  - sudo apt-get install neo4j-enterprise=3.2.3
-  - sleep 10
-  - curl http://localhost:7474/db/data/
+  - sudo apt-get install neo4j-enterprise
 
 install: true
 script:
