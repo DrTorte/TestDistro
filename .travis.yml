@@ -14,3 +14,5 @@ before_script:
 install: true
 script:
   - service neo4j status
+  - service neo4j start
+  - curl http://localhost:7474/db/data
