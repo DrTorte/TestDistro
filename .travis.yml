@@ -3,5 +3,5 @@ rvm:
   - jruby
 services: elasticsearch
 
-before_script:
-  -curl -XGET 'localhost:9200'
+before_install:
+  curl -XGET 'localhost:9200'
