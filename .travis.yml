@@ -1,7 +1,22 @@
-language: ruby
-rvm:
-  - jruby
-services: elasticsearch
+language: java
 
-before_install:
-  curl -XGET 'localhost:9200'
+
+matrix:
+  allow_failures:
+    - jdk: oraclejdk9
+  include:
+# JDK 8
+    - jdk: oraclejdk8
+      env: JDK_RELEASE='8'
+# JDK 9
+    - jdk: oraclejdk9
+      env: JDK_RELEASE='9'
+
+# use travis-ci docker based infrastructure
+sudo: false
+
+# https://github.com/travis-ci/travis-ci/issues/3259#issuecomment-130860338
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
