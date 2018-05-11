@@ -2,8 +2,15 @@ language: node_js
 node_js:
   - "7"
 
-
 before_install:
-  - ./deploy.sh
+  - chmod +x ./deploy.sh
+  
 script:
   - 
+
+
+deploy:
+  provider: script
+  script: ./deploy.sh
+  on:
+    branch: master
