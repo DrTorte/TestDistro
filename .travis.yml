@@ -1,4 +1,4 @@
-language: rvm
+language: ruby
 
 deploy:
   provider: script
