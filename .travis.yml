@@ -5,8 +5,10 @@ node_js:
 before_install:
   
 script:
-  - 
+  - daSDasdA
 
+after_script:
+  - echo hello
 
 deploy:
   provider: script
