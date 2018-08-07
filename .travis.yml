@@ -1,1 +1,5 @@
-sdfafasdvxcz23re32e d23ed c asdc asdcasdc adsvcasc  
+install: skip
+language: python
+
+script:
+  - "python3"
