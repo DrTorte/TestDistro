@@ -1,5 +1,6 @@
-install: skip
 language: python
+dist: trusty
+python: "3.7"
 
 script:
   - "python3"
