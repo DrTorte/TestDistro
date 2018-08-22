@@ -1,4 +1,4 @@
-language: php
+language: ruby
 sudo: true
 
 script: ./installscript.sh
