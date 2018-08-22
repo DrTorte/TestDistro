@@ -1,5 +1,5 @@
 language: php
 sudo: true
 
-install: ./installscript.sh
+install: sudo ./installscript.sh
 script: mysql --version
