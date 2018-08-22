@@ -1,5 +1,5 @@
 language: php
 sudo: true
 
-install: sudo apt-get install mysql-server-8.0
+install: ./installscript.sh
 script: mysql --version
