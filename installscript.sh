@@ -1,2 +1,2 @@
-curl -x GET https://api.travis-ci.org
-curl -x GET https://api.travis-ci.com
+curl https://api.travis-ci.org
+curl https://api.travis-ci.com
