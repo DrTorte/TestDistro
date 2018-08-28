@@ -3,4 +3,4 @@ sudo: true
 
 install: true
 
-script: ./installscript.sh
+script: bash installscript.sh
