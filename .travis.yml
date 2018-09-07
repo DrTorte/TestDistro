@@ -1,6 +1,12 @@
 language: node_js
 sudo: true
-
 install: true
+script: echo "Wieee!"
 
-script: bash installscript.sh
+jobs:
+    include:
+      -script: echo "Hello!"
+      -script: echo "Not Hello!"
+deploy:
+  password:
+    secure: kheKhgZ3DtVdNe7k9SE8b7UriuCWETjInGmJ/dxOb0IWdCyhTyDdLIWIu1XPQQ9UP38YOy7NqtOxtbJiRg3O09ucp7MJt9GoY78N89c61OCs6Hi4b3q5YZjVcuXWiQfeNLfXTL+631rv0NTF2nRp/EB3GTmJUh/wjjvxM/KKnUuaSAPCx50JOLo5shz8rHGkzFbdWhNp2SB+1pl9ZKEbQEyVm3X36/QFDXfSMztCwHDQ8+Asg86qJKcWtsTKKMezIKproaxM38BOD2OV5I5jST9XkR133t1IDMNPZCXYH3h8b5LVnUIroB4Srehn6yea3FIZLYbu5D+yNA31SWGX9QOiBtZfVaCSfjJzN11O4D2aT7RCjW40HpsiUpo/iggEwFcSpIKZkFAwAywhC9kbuRyRoUJoyUUadTAJJWfHXfTjCGOeEe6H2YJL/BMZvHzeAKUFZdiyfwL1klwD2gNqcgGBQDlMQvV7v+KbR7Xo3MlkEpmee/AQSMQ1Bks+TN29NpoRGAnVc/V2qHLE+QL9dEZ5xfa355+PzNEYnZ4ijDejsUqLPyaJSpzxL2ExQBKpDKp8MysM2KL3tHEw6gamon6Y5E5aOLztkvDFQKm4b+55uOlyn/Ao43KDI4leftFgNPhP90EwaG7WlFCiIKOC+wpDM/OLdosAlwQ/Zu79Eg8=
