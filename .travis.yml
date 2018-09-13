@@ -3,6 +3,9 @@ sudo: true
 install: true
 script: echo "Wieee!"
 
+before_install:
+    npm i -g npm@6.2.0
+
 jobs:
     include:
       -script: echo "Hello!"
