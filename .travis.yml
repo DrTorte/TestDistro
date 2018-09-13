@@ -4,7 +4,9 @@ install: true
 script: echo "Wieee!"
 
 before_install:
-    npm i -g npm@6.2.0
+    - npm i -g npm@6.2.0
+    - node --version
+    - npm --version
 
 jobs:
     include:
