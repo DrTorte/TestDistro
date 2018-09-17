@@ -4,9 +4,7 @@ install: true
 script: echo "Wieee!"
 
 before_install:
-    - npm i -g npm@6.4.1
-    - node --version
-    - npm --v
+    - sudo apt-get fpc
 
 jobs:
     include:
