@@ -4,7 +4,7 @@ install: true
 script: echo "Wieee!"
 
 before_install:
-    - sudo apt-get fpc
+    - sudo apt-get install fpc
 
 jobs:
     include:
