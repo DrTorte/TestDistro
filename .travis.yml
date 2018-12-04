@@ -1,8 +1,6 @@
-os: osx
 language: php
-sudo: true
 install: true
-script: echo "Wieee!"
+script: mysql -v
 
 before_install:
     - sudo apt-get install fpc
