@@ -1,6 +1,6 @@
 language: php
 install: true
-script: mysql -v
+script: mysql -V
 
 before_install:
     - sudo apt-get install fpc
