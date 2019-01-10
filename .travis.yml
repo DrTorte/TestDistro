@@ -1,3 +1,4 @@
+distro: xenial
 language: php
 install: true
 script: mysql -V
