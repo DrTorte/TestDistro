@@ -1,10 +1,6 @@
 dist: xenial
-language: php
+language: android
 install: true
-script: mysql -V
-
-before_install:
-    - sudo apt-get install fpc
 
 jobs:
     include:
