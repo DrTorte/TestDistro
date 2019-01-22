@@ -5,8 +5,10 @@ install: true
 matrix:
   include:
   - language: java
-
-jobs:
-    include:
-      -script: echo "Hello!"
-      -script: echo "Not Hello!"
+    script: 
+      - echo "Hello!"
+      - echo "Not Hello!"
+  - language: python
+    script: 
+      - echo "Py!"
+      - echo "hssss"
