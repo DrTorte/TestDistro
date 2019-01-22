@@ -1,15 +1,16 @@
-dist: xenial
-language: minimal
-install: true
-
+env:
+  global:
+# CN1_SOURCES environment variable for internal use only
+# DO NOT UNCOMMENT THIS LINE!!!
+#     - CN1_SOURCES=https://github.com/codenameone/CodenameOne/archive/master.zip
 matrix:
   include:
-  - language: node_js
-  node_js: "7"
-    script: 
-      - yarn version
-      - echo "Not Hello!"
-  - language: python
-    script: 
-      - echo "Py!"
-      - echo "hssss"
+##<CN1:javase-8>##
+    - language: java
+      env: CN1_PLATFORM=javase CN1_RUNTESTS_JAVASE=1
+      jdk: oraclejdk8
+      before_script:
+        - "export DISPLAY=:99.0"
+        - "sh -e /etc/init.d/xvfb start"
+script:
+  - bash .travis/build.sh;
