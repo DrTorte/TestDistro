@@ -1,6 +1,10 @@
 dist: xenial
-language: android
+language: minimal
 install: true
+
+matrix:
+  include:
+  - language: java
 
 jobs:
     include:
