@@ -5,6 +5,7 @@ install: true
 matrix:
   include:
   - language: node_js
+  node_js: "7"
     script: 
       - yarn version
       - echo "Not Hello!"
