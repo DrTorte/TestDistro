@@ -4,9 +4,9 @@ install: true
 
 matrix:
   include:
-  - language: cpp
+  - language: node
     script: 
-      - echo "Hello!"
+      - yarn version
       - echo "Not Hello!"
   - language: python
     script: 
