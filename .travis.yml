@@ -4,7 +4,7 @@ install: true
 
 matrix:
   include:
-  - language: java
+  - language: c++
     script: 
       - echo "Hello!"
       - echo "Not Hello!"
