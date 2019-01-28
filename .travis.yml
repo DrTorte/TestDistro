@@ -1,3 +1,9 @@
+language: java
 dist: xenial
 
-script: sh ./deploy.sh
+before_install:
+   - sudo apt-get update -qq
+   - sudo apt-get install gradle
+
+script:
+    -  gradle all
