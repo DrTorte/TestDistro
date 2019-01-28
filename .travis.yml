@@ -1,9 +1,17 @@
 language: java
-script: make all
+dist: trusty
+
 jdk:
-   - oraclejdk8
+    - openjdk11
+
+matrix:
+  fast_finish: true
+  include:
+     - jdk: openjdk11
+
+script:
+    -  gradle all
+
 before_install:
    - sudo apt-get update -qq
-   - sudo apt-get install xsltproc
-   - sudo apt-get install curl
    - sudo apt-get install gradle
