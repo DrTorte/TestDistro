@@ -1,1 +1,2 @@
 echo -e hello
+ifconfig
