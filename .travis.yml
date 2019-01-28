@@ -1,9 +1,9 @@
 language: java
-dist: xenial
-
+script: make all
+jdk:
+   - oraclejdk8
 before_install:
    - sudo apt-get update -qq
-   - sudo apt-get install gradle
-
-script:
-    -  gradle all
+   - sudo apt-get install xsltproc
+   - sudo apt-get install curl
+- sudo apt-get install gradle
