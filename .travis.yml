@@ -1,8 +1,8 @@
 language: java
-dist: trusty
+dist: xenial
 
-jdk:
-    - openjdk11
+servies:
+  - mysql
 
 matrix:
   fast_finish: true
@@ -10,7 +10,7 @@ matrix:
      - jdk: openjdk11
 
 script:
-    -  gradle all
+    -  mysql -e 'create database test;'
 
 before_install:
    - sudo apt-get update -qq
