@@ -4,11 +4,6 @@ dist: xenial
 servies:
   - mysql
 
-matrix:
-  fast_finish: true
-  include:
-     - jdk: openjdk11
-
 script:
     -  mysql -e 'create database test;'
 
