@@ -5,8 +5,4 @@ servies:
   - mysql
 
 script:
-    -  mysql -e 'create database test;'
-
-before_install:
-   - sudo apt-get update -qq
-   - sudo apt-get install gradle
+  -  free -m
